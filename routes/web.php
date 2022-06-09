@@ -14,15 +14,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+
     $gateway = new Braintree\Gateway([
-        'environment' => config('service.braintree.environment'),
-        'merchantId' => config('service.braintree.environment.merchantId'),
-        'publicKey' => config('service.braintree.environment.publicKey'),
-        'privateKey' => config('service.braintree.environment.privateKey')
+        'environment' => config('services.braintree.environment'),
+        'merchantId' => config('services.braintree.merchantId'),
+        'publicKey' => config('services.braintree.publicKey'),
+        'privateKey' => config('services.braintree.privateKey')
     ]);
 
     $token = $gateway->ClientToken()->generate();
     return view('welcome' , [
-        'token' => $token
+        'token' => $token,
     ]);
 });
