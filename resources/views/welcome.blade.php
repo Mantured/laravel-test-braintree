@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Bella raga
                 </div>
 
                 <form method="post" id="payment-form" action="#">
