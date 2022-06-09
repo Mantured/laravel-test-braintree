@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    <h1 style="color: red">Laravel</h1>
                 </div>
 
                 <form method="post" id="payment-form" action="#">
