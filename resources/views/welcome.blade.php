@@ -81,7 +81,11 @@
 
             <div class="content">
                 <div class="title m-b-md">
+<<<<<<< HEAD
                     Bella raga
+=======
+                    <h1 style="color: red">Laravel</h1>
+>>>>>>> origin/add-features-WIP
                 </div>
 
                 <form method="post" id="payment-form" action="#">
